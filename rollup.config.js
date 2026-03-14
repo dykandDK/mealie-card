@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import json from '@rollup/plugin-json';
 import terser from '@rollup/plugin-terser';
-import { string } from 'rollup-plugin-string';
+import importCss from 'rollup-plugin-import-css';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -17,9 +17,7 @@ export default {
     inlineDynamicImports: true
   },
   plugins: [
-    string({
-      include: ['**/*.css', '**/*.scss', '**/*.sass']
-    }),
+    importCss(),
     json(),
     typescript({
       tsconfig: './tsconfig.json',

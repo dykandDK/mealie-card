@@ -11,3 +11,6 @@ package-lock.json*
 
 # VSCode
 .vscode/
+
+# Build documentation
+BUILD.md

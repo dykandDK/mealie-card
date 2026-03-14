@@ -36,6 +36,7 @@
     "cross-env": "^10.0.0",
     "eslint": "^8.50.0",
     "rollup": "^3.29.4",
+    "rollup-plugin-import-css": "^4.2.0",
     "rollup-plugin-string": "^3.0.0",
     "typescript": "^5.2.2"
   },
