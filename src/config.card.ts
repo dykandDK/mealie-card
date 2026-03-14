@@ -9,6 +9,7 @@ const COMMON_DISPLAY_DEFAULTS = {
   show_total_time: true,
   show_perform_time: true,
   show_description: false,
+  show_tags: false,
   clickable: false
 } as const;
 

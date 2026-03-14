@@ -98,6 +98,10 @@ export abstract class MealieBaseCard extends LitElement {
     return timeBadges.length > 0 ? html`<div class="recipe-times">${timeBadges}</div>` : '';
   }
 
+  protected renderRecipeTag(tags: string[], showTags: boolean): TemplateResult | string {
+    return showTags && tags && tags.length > 0 ? html`<div class="recipe-tag">${tags[0]}</div>` : '';
+  }
+
   protected renderTimeBadge(icon: string, label: string): TemplateResult {
     return html`
       <span class="time-badge">

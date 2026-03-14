@@ -9,6 +9,7 @@ interface DisplayOptions {
   show_total_time: boolean;
   show_perform_time: boolean;
   show_description: boolean;
+  show_tags: boolean;
   clickable: boolean;
 }
 
@@ -58,6 +59,7 @@ export interface MealiePlanRecipe {
   recipe: BaseRecipeData & {
     recipe_yield?: string;
     original_url?: string;
+    tags?: string[];
   };
   household_id: string;
 }

@@ -55,6 +55,11 @@ export class MealieReceipeCardEditor extends LitElement {
         </div>
 
         <div class="option">
+          <ha-switch .checked=${this.config.show_tags ?? false} .configValue=${'show_tags'} @change=${this.valueChanged}></ha-switch>
+          ${localize('editor.show_tags')}
+        </div>
+
+        <div class="option">
           <ha-switch .checked=${this.config.show_prep_time ?? true} .configValue=${'show_prep_time'} @change=${this.valueChanged}></ha-switch>
           ${localize('editor.show_prep_time')}
         </div>
